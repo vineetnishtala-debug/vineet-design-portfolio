@@ -1,7 +1,13 @@
 # Vineet Nishtala — Design Portfolio
 
-A responsive portfolio featuring three projects:
+## Public links
 
+- [Open the complete design portfolio](https://vineetnishtala-debug.github.io/vineet-design-portfolio/)
+- [Open the Afterimage game proposal](https://vineetnishtala-debug.github.io/vineet-design-portfolio/proposal.html)
+
+A responsive portfolio featuring four projects:
+
+- Afterimage browser-game proposal
 - Midnight City album cover
 - Recipe Shortcut reusable AI skill
 - The Canopy Loop 3D environment
