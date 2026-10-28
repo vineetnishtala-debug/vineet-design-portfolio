@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A client-facing proposal for Afterimage, a short browser game about an unreliable archive.">
+  <title>Afterimage — Game Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="proposal.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Back to Vineet's portfolio"><span class="signal"></span> VN / PORTFOLIO</a>
+    <nav aria-label="Proposal sections">
+      <a href="#research">Research</a><a href="#concept">Concept</a><a href="#journey">Journey</a><a href="#style">Style</a><a href="#plan">Plan</a>
+    </nav>
+    <button class="sound-button" id="soundToggle" aria-pressed="false"><span>Sound</span><b>Off</b></button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-dark">
+      <div class="eyebrow">GAME PROPOSAL · HALLUCINATION · WEEK 01</div>
+      <div class="hero-grid">
+        <div>
+          <h1>AFTER<span>IMAGE</span></h1>
+          <p class="lede">An archive asks you to repair corrupted memories. Each correction makes the record more coherent—and less true.</p>
+          <div class="hero-meta"><span>Browser / 5–7 minutes</span><span>Mouse + keyboard</span><span>Solo narrative puzzle</span></div>
+        </div>
+        <div class="archive-visual" aria-label="Concept illustration: two overlapping versions of a room">
+          <div class="scan scan-a"></div><div class="scan scan-b"></div>
+          <div class="room room-a"><i></i><i></i><i></i><em>VER. 03</em></div>
+          <div class="room room-b"><i></i><i></i><i></i><em>VER. 04?</em></div>
+          <div class="cursor">+</div>
+          <p>MEMORY MATCH <b>62%</b></p>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL TO ENTER THE ARCHIVE <span>↓</span></div>
+    </section>
+
+    <section class="intro pale">
+      <div class="section-label">01 / THE EXPERIENCE</div>
+      <div class="split">
+        <h2>Trust the image.<br><i>Then doubt it.</i></h2>
+        <div><p class="large">The player is a night archivist comparing damaged photographs with confident machine captions. They drag details into place and type short corrections. The archive rewards agreement, but subtle contradictions accumulate.</p><p>What begins as tidy restoration becomes a choice: preserve a comforting reconstruction, or leave visible gaps where certainty is impossible. The game treats hallucination not as a monster, but as the seductive feeling that a plausible story must be true.</p></div>
+      </div>
+    </section>
+
+    <section id="research" class="section-dark research">
+      <div class="section-label">02 / CASE STUDY</div>
+      <div class="title-row"><h2>The Password Game</h2><p>A browser game by independent creator <a href="https://neal.fun/" target="_blank" rel="noreferrer">Neal Agarwal ↗</a>, released on Neal.fun in 2023. I chose it because a familiar interface slowly turns into an unstable system the player must continuously reinterpret.</p></div>
+      <div class="source-strip"><a href="https://neal.fun/password-game/" target="_blank" rel="noreferrer">Play the official game ↗</a><a href="https://blog.glitch.com/post/neal-agarwal-is-keeping-the-weird-web-alive/" target="_blank" rel="noreferrer">Creator interview / Glitch ↗</a><a href="https://indianexpress.com/article/puzzles-and-games/info/the-password-game-by-neal-agarwal-word-puzzle-8696368/" target="_blank" rel="noreferrer">Contemporary review + creator posts ↗</a></div>
+
+      <h3>Three moments that changed my reading</h3>
+      <div class="moments">
+        <article><span>01</span><div class="mini-ui"><b>Rule 1</b><p>Your password must be at least 5 characters.</p></div><h4>Recognition</h4><p>The opening looks like a normal sign-up form. I knew the visual grammar immediately, so typing felt automatic rather than playful.</p><small>OBSERVATION</small></article>
+        <article><span>02</span><div class="mini-ui warning"><b>Rule 14</b><p>Your password must include the name of this country.</p></div><h4>Expansion</h4><p>The form suddenly requires research outside itself. The “password” becomes a workspace, and success depends on switching between tools and kinds of knowledge.</p><small>OBSERVATION + INTERPRETATION</small></article>
+        <article><span>03</span><div class="mini-ui danger"><b>Rule 20</b><p>Oh no! Your password is on fire.</p></div><h4>Maintenance</h4><p>A solved rule becomes an emergency. I stopped composing an answer and began tending a fragile system whose earlier parts could break at any moment.</p><small>OBSERVATION + INTERPRETATION</small></article>
+      </div>
+
+      <h3>Five actions, five shifts in understanding</h3>
+      <div class="event-table" role="table" aria-label="Player action analysis">
+        <div class="tr head" role="row"><span>Action</span><span>Game response</span><span>What the player learns</span></div>
+        <div class="tr"><b>01 · Types a simple word</b><span>Basic rules turn green; another appears.</span><span>Progress means satisfying cumulative constraints.</span></div>
+        <div class="tr"><b>02 · Adds numerals</b><span>A new total fixes one rule but can disrupt Roman-numeral math.</span><span>Every character has several meanings at once.</span></div>
+        <div class="tr"><b>03 · Searches an image clue</b><span>A country name validates only when inserted into the same string.</span><span>The game deliberately leaks beyond its own page.</span></div>
+        <div class="tr"><b>04 · Formats selected text</b><span>Font size, bold, and italics become rule variables.</span><span>The password is not only text; presentation is playable state.</span></div>
+        <div class="tr"><b>05 · Repairs a crisis</b><span>Fire spreads while earlier conditions continue to update.</span><span>Completion has become ongoing care, not a finish line.</span></div>
+      </div>
+      <div class="learning"><b>What I carry forward</b><p>Agarwal turns one ordinary input field into an escalating world by changing what the same action means. Afterimage adopts that economy: one correction tool persists across three stages, while its moral meaning changes from repair, to doubt, to refusal.</p></div>
+    </section>
+
+    <section class="ai pale">
+      <div class="section-label">03 / CRITICAL DISCUSSION WITH AI</div>
+      <div class="split top"><h2>The first answer was plausible.<br><i>That was the problem.</i></h2><div><p class="large">I asked AI to connect my five play events to pacing, interface, and narrative. I verified factual claims against the official game and creator pages, and treated broader meanings as interpretations—not creator intent.</p></div></div>
+      <div class="verification">
+        <article><span>VERIFIED</span><h4>Authorship and format</h4><p>Neal Agarwal made and hosts the browser game on Neal.fun. The game accumulates rules inside one editable field.</p></article>
+        <article><span>NOT VERIFIED</span><h4>A singular “message”</h4><p>I found no primary source proving the game was designed specifically as a critique of surveillance or data extraction. That remained AI speculation.</p></article>
+      </div>
+      <div class="gaps">
+        <article><b>GAP 01 / SENSATION</b><h3>AI called escalation “comedic difficulty.”</h3><p>That missed the bodily rhythm: reading, searching, rushing, caretaking. The game does not only become harder; it makes attention feel divided and precarious.</p></article>
+        <article><b>GAP 02 / CONTRADICTION</b><h3>AI treated every new rule as forward progress.</h3><p>But later edits can invalidate earlier success. Progress is reversible. That contradiction is the heart of the experience, not a side effect.</p></article>
+      </div>
+      <div class="exchange">
+        <div class="exchange-head">SELECTED EXCHANGE / ANALYSIS REVISION</div>
+        <blockquote class="ai-line"><b>AI / FIRST PASS</b> “The escalating rules reward adaptability and create comic frustration as the player moves toward mastery.”</blockquote>
+        <blockquote class="me-line"><b>ME / CHALLENGE</b> “That assumes progress is stable. In my play notes, satisfying a later numeric rule broke an earlier one, and the fire turned solved text into a threat. Give two readings that account for reversibility.”</blockquote>
+        <blockquote class="ai-line"><b>AI / REVISED</b> “One reading is mastery through systems thinking. A rival reading is maintenance without security: competence only postpones collapse. The second better fits the fire and revalidation events.”</blockquote>
+      </div>
+      <div class="conclusion"><b>MY CONCLUSION → DESIGN DECISION</b><p>Uncertainty becomes meaningful when the interface makes the player maintain a version of reality, not merely observe distortion. In Afterimage, every “repair” remains editable and can conflict with later evidence. The final action is not solving the archive; it is deciding what deserves to remain unresolved.</p></div>
+    </section>
+
+    <section id="concept" class="concept section-dark">
+      <div class="section-label">04 / NARRATIVE + CONCEPT</div>
+      <div class="concept-grid"><div><p class="kicker">HALLUCINATION, REFRAMED</p><h2>A confident story assembled from missing evidence.</h2></div><div><p class="large">The setting is a municipal Memory Archive after closing. An automated system has generated captions for damaged family photographs and flagged contradictions for a human reviewer.</p><p>The player is that reviewer. Their job appears simple: align objects, confirm captions, and raise the archive’s confidence score. Across three folders, the system begins reusing details from unrelated images. It is not “seeing things” randomly—it is smoothing gaps with patterns it already knows.</p><p>The emotional arc moves from satisfaction → suspicion → responsibility. The player should leave wondering whether a clean, complete record is worth the erasure required to make it.</p></div></div>
+      <div class="principles"><article><span>01</span><h4>One action, changing meaning</h4><p>Drag a fragment to “correct” the image. Later, the same gesture conceals evidence.</p></article><article><span>02</span><h4>Contradiction over jump scare</h4><p>Unease comes from small mismatches: a second shadow, an impossible date, a voice naming the wrong room.</p></article><article><span>03</span><h4>Ambiguity with agency</h4><p>The ending asks the player to publish, preserve gaps, or erase their own edits. No option is labeled correct.</p></article></div>
+    </section>
+
+    <section id="journey" class="journey pale">
+      <div class="section-label">05 / INTERACTION + PLAYER JOURNEY</div>
+      <div class="title-row dark"><h2>One gesture.<br>Three meanings.</h2><p>The core loop is legible in seconds: inspect a photograph, drag a highlighted fragment, and watch the caption and confidence score update. Each stage changes the evidence—not the controls.</p></div>
+      <div class="flow" aria-label="Flowchart from opening through three stages to ending">
+        <div><small>OPENING</small><b>Clock in</b><p>Click “begin shift.”</p></div><i>→</i><div><small>STAGE 01</small><b>Repair</b><p>Match obvious fragments.</p></div><i>→</i><div><small>STAGE 02</small><b>Compare</b><p>Resolve conflicting captions.</p></div><i>→</i><div><small>STAGE 03</small><b>Refuse</b><p>Find edits made by you.</p></div><i>→</i><div class="end"><small>ENDING</small><b>Choose record</b><p>Publish / leave gaps / erase.</p></div>
+      </div>
+      <div class="stage-notes"><article><b>OPENING · ENTER</b><p>A blank terminal blinks. A soft tone and one cyan button invite the player to begin. A single instruction appears: “restore what is missing.”</p></article><article><b>01 · NOTICE</b><p>Three clear matches teach drag-and-drop. Feedback is immediate: edges align, caption updates, score rises. Restoration feels satisfying.</p></article><article><b>02 · DOUBT</b><p>Two plausible fragments fit the same gap. Either choice changes the caption. Audio briefly contradicts the selected image, introducing uncertainty.</p></article><article><b>03 · RECONSIDER</b><p>The archive reveals that “source” fragments were generated from the player’s earlier edits. Confidence rises when evidence is deleted. The tool is now visibly complicit.</p></article><article><b>ENDING · LEAVE</b><p>Three unranked choices alter the final archive screen. No score appears. The player hears only the consequences of their own selected record.</p></article></div>
+
+      <h3>Storyboard / key beats</h3>
+      <div class="storyboard">
+        <article><div class="board-art b1"><span>BEGIN SHIFT</span></div><small>FRAME 01 / ENTRY</small><h4>Goal: enter the archive</h4><p><b>Input</b> click · <b>Feedback</b> terminal wakes, room tone begins · <b>Continue</b> first file opens</p></article>
+        <article><div class="board-art b2"><i></i><i></i><span>84%</span></div><small>FRAME 02 / FIRST ACTION</small><h4>Goal: complete the image</h4><p><b>Input</b> drag fragment · <b>Feedback</b> cyan seam + rising tone · <b>Continue</b> caption validates</p></article>
+        <article><div class="board-art b3"><i>A</i><i>B</i><span>?</span></div><small>FRAME 03 / NEW RESPONSE</small><h4>Goal: choose between matches</h4><p><b>Input</b> compare/drag · <b>Feedback</b> image fits, audio disagrees · <b>Continue</b> commit or undo</p></article>
+        <article><div class="board-art b4"><span>YOUR EDIT<br>IS THE SOURCE</span></div><small>FRAME 04 / DISCOVERY</small><h4>Goal: decide what remains</h4><p><b>Input</b> publish / preserve / erase · <b>Feedback</b> different final record · <b>Continue</b> quiet credits</p></article>
+      </div>
+    </section>
+
+    <section id="style" class="style section-dark">
+      <div class="section-label">06 / STYLE + SOUND GUIDE</div>
+      <div class="title-row"><h2>Institutional clarity,<br>infected by memory.</h2><p>A restrained archive interface makes each inconsistency visible. The design avoids generic glitch-horror: corruption appears as precise alignment errors, duplicate timestamps, and captions that almost—but not quite—fit.</p></div>
+      <div class="style-grid">
+        <article class="palette"><b>COLOR / CONTRAST</b><div><i></i><i></i><i></i><i></i></div><h4>Ink, paper, warning</h4><p>Near-black and warm paper establish authority. Cyan marks confirmed machine logic; acid red appears only when a human edit is being mistaken for evidence.</p></article>
+        <article class="type-sample"><b>TYPOGRAPHY</b><h4>Aa <span>01:47:03</span></h4><p><strong>Manrope</strong> carries the proposal and narrative. <strong>DM Mono</strong> labels files, scores, and system messages. The contrast separates human reading from machine classification.</p></article>
+        <article class="motion-sample"><b>MOTION / INTERFACE</b><div><i></i><i></i></div><h4>Deliberate, not noisy</h4><p>Fragments lag 120ms behind the cursor, then snap into place. A caption changes one word at a time. Reduced-motion settings remove lag and scanning animation.</p></article>
+        <article class="sound-sample"><b>SOUND / SILENCE</b><div class="wave">▁▃▅▂▆▂▁ — ▁▂▁</div><h4>Evidence has a voice</h4><p>A low archive hum, a two-note validation tone, paper friction, and occasional voice fragments. In Stage 2, sound contradicts the image. The final choice cuts the hum completely.</p></article>
+      </div>
+      <div class="references"><h3>Annotated references + credits</h3><a href="https://www.loc.gov/pictures/collection/fsa/" target="_blank" rel="noreferrer"><b>Farm Security Administration archive / Library of Congress ↗</b><span>Reference for catalog language, documentary framing, and the ethical weight of image captions. Public-domain collection; no image is copied into this proposal.</span></a><a href="https://voyager.jpl.nasa.gov/golden-record/" target="_blank" rel="noreferrer"><b>Voyager Golden Record / NASA–JPL ↗</b><span>Reference for building a record from partial signals and for the warm gold-on-black palette. NASA project documentation.</span></a><a href="https://freesound.org/people/InspectorJ/sounds/411639/" target="_blank" rel="noreferrer"><b>“Ambience, Large Crowd, A” / InspectorJ, Freesound ↗</b><span>Audio reference for distant, indistinct human presence; proposed production will use an original room tone or an appropriately attributed CC recording.</span></a><a href="https://neal.fun/password-game/" target="_blank" rel="noreferrer"><b>The Password Game / Neal Agarwal ↗</b><span>Interaction reference: one familiar interface accumulates responsibilities and changes meaning without adding a complex control scheme.</span></a></div>
+      <p class="credit-note">Concept artwork, diagrams, storyboard panels, interface mockups, and the optional synthesized ambient tone on this page are original for this proposal.</p>
+    </section>
+
+    <section id="plan" class="plan pale">
+      <div class="section-label">07 / TWO-WEEK BUILD PLAN</div>
+      <div class="split top"><h2>Small enough to finish.<br><i>Specific enough to test.</i></h2><div><p class="large">The prototype uses HTML, CSS, and JavaScript with one reusable drag/caption system. Three short folders vary content and consequences rather than adding new mechanics.</p></div></div>
+      <div class="weeks"><article><header><span>WEEK 02</span><b>BUILD THE PLAYABLE SPINE</b></header><ul><li>Implement opening, drag/snap interaction, undo, and keyboard alternative.</li><li>Create one complete “golden path” through all three stages and ending choices.</li><li>Add responsive layout, progress state, captions, and reduced-motion support.</li><li>Produce original placeholder photographs as abstract collages; record basic foley.</li></ul><footer><b>DONE WHEN</b> a player can reach all three endings in 5–7 minutes without explanation.</footer></article><article><header><span>WEEK 03</span><b>TEST, REFINE, PUBLISH</b></header><ul><li>Observe 3–5 players: first click, misunderstood feedback, hesitation, and ending choice.</li><li>Test whether Stage 2 creates doubt without looking like a technical bug.</li><li>Tune hit areas, text length, audio levels, pacing, mobile layout, and color contrast.</li><li>Add final art/sound credits, fix defects, publish to the portfolio, and test the public URL.</li></ul><footer><b>SUCCESS SIGNAL</b> players can explain why “higher confidence” is not always more truthful.</footer></article></div>
+      <div class="scope"><b>CORE / MUST SHIP</b><span>Opening · 3 folders · drag/correct loop · undo · 3 ending choices · sound control · credits</span><b>ONLY IF TIME</b><span>Extra image variants · save state · animated title treatment</span><b>OUT OF SCOPE</b><span>Generative AI API · accounts · procedural levels · voice input</span></div>
+    </section>
+  </main>
+  <footer class="final-footer"><div><span>AFTERIMAGE</span><p>A short browser game about the stories that fill a gap.</p></div><a href="#top">RETURN TO TOP ↑</a></footer>
+  <script src="proposal.js"></script>
+</body>
+</html>
