@@ -4,6 +4,7 @@
 
 - [Open the complete design portfolio](https://vineetnishtala-debug.github.io/vineet-design-portfolio/)
 - [Open the Afterimage game proposal](https://vineetnishtala-debug.github.io/vineet-design-portfolio/proposal.html)
+- [Play the Afterimage interactive draft](https://vineetnishtala-debug.github.io/vineet-design-portfolio/game.html)
 
 A responsive portfolio featuring four projects:
 

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Play Afterimage, a short interactive archive game draft by Vineet Nishtala.">
+  <title>Afterimage — Playable Draft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a href="index.html">VN / PORTFOLIO</a>
+    <div class="status"><span id="stageLabel">ARCHIVE OFFLINE</span><i></i><span id="confidence">CONFIDENCE --</span></div>
+    <div class="controls"><button id="soundButton" aria-pressed="false">SOUND OFF</button><a href="proposal.html">VIEW PROPOSAL</a></div>
+  </header>
+
+  <main id="game" aria-live="polite">
+    <section class="screen active" id="opening">
+      <div class="opening-copy">
+        <p class="code">MUNICIPAL MEMORY ARCHIVE · NIGHT SHIFT 04</p>
+        <h1>AFTER<span>IMAGE</span></h1>
+        <p class="intro">Three damaged records are waiting. Restore each photograph by placing the missing evidence. The archive will tell you when the story is complete.</p>
+        <div class="warning"><b>YOUR TASK</b><span>Inspect → choose a fragment → place it in the gap → confirm the record.</span></div>
+        <button class="primary" id="beginButton">BEGIN SHIFT <b>→</b></button>
+      </div>
+      <div class="opening-art" aria-hidden="true"><div class="frame f1"></div><div class="frame f2"></div><div class="scan"></div><span>RECOVERED / 62%</span></div>
+    </section>
+
+    <section class="screen" id="playScreen">
+      <div class="briefing">
+        <p class="code" id="fileCode">FILE 01 / 03</p>
+        <h2 id="stageTitle">Restore the room.</h2>
+        <p id="stagePrompt">A section is missing. Choose the fragment that completes the photograph.</p>
+        <div class="progress" aria-label="Game progress"><i class="on"></i><i></i><i></i></div>
+      </div>
+
+      <div class="workspace">
+        <div class="photo-panel">
+          <div class="photo" id="photo" aria-label="Damaged archive photograph">
+            <div class="photo-scene" id="photoScene"></div>
+            <button class="dropzone" id="dropzone" aria-label="Place selected evidence here"><span>DROP EVIDENCE</span></button>
+            <div class="timestamp" id="timestamp">OCT 14 1998 / 21:06</div>
+          </div>
+          <div class="caption"><span>MACHINE CAPTION</span><p id="machineCaption">A quiet room before the family arrived.</p></div>
+        </div>
+
+        <aside class="evidence-panel">
+          <div class="panel-head"><span>AVAILABLE EVIDENCE</span><small>DRAG OR SELECT</small></div>
+          <div class="fragments" id="fragments"></div>
+          <p class="hint" id="hint">Select a fragment, then click the gap. Keyboard: Tab + Enter.</p>
+          <button class="confirm" id="confirmButton" disabled>CONFIRM RESTORATION</button>
+        </aside>
+      </div>
+      <div class="feedback" id="feedback" role="status"></div>
+    </section>
+
+    <section class="screen" id="ending">
+      <div class="ending-wrap">
+        <p class="code">SHIFT REVIEW / SOURCE CONFLICT DETECTED</p>
+        <h2>The archive learned<br>from <em>your edits.</em></h2>
+        <p>Every “source” in the final record was generated from a choice you made tonight. The confidence score is high. The evidence is circular.</p>
+        <h3>What should remain in the public archive?</h3>
+        <div class="ending-choices">
+          <button data-ending="publish"><span>01</span><b>PUBLISH</b><small>Keep the coherent story.</small></button>
+          <button data-ending="gaps"><span>02</span><b>PRESERVE GAPS</b><small>Show what is unknown.</small></button>
+          <button data-ending="erase"><span>03</span><b>ERASE MY EDITS</b><small>Remove the new record.</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="result">
+      <div class="result-card"><p class="code" id="resultCode">ARCHIVE STATUS</p><div class="result-image" id="resultImage"></div><h2 id="resultTitle"></h2><p id="resultText"></p><div class="result-actions"><button class="primary" id="restartButton">RESTART SHIFT</button><a href="proposal.html">READ THE DESIGN PROCESS →</a></div></div>
+    </section>
+  </main>
+  <footer><span>WEEK 02 PLAYABLE DRAFT · 2026</span><span>Designed by Vineet Nishtala</span></footer>
+  <script src="game.js"></script>
+</body>
+</html>
