@@ -104,6 +104,18 @@ to{scale:1;opacity:1}
 .process-download{margin-top:0}
 .process-download span{color:#aeb8d1}
 .environment-page .footer{background:var(--ink)}
+.before-after{padding:115px 0;border-bottom:1px solid #d4cec4}
+.before-after h2{font-size:clamp(2.4rem,5vw,4.8rem);max-width:900px}
+.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.comparison-grid figure{position:relative;margin:0}
+.comparison-grid img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:20px}
+.comparison-grid figcaption{font-size:.9rem;line-height:1.55;color:#5e6574;padding:12px 2px 0}
+.comparison-label{position:absolute;z-index:2;top:14px;left:14px;background:#fff;color:var(--ink);border-radius:999px;padding:8px 12px;text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;font-weight:900}
+.comparison-label.after{background:var(--lime)}
+.change-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.change-chips span{background:#fff;border:1px solid #d8d2c8;border-radius:999px;padding:13px 16px;font-size:.85rem}
+.change-chips b{color:#7b36d1;margin-right:8px}
+.download-links{display:flex;gap:20px}
 @media(max-width:800px){.wrap{width:min(100% - 24px,1180px)}
 .navlinks{gap:12px}
 .navlinks a:not(:last-child){display:none}
@@ -132,4 +144,7 @@ to{scale:1;opacity:1}
 .reflection-section{padding:75px 0 50px}
 .reflection-card,.credit-card{padding:26px}
 .change-list div{grid-template-columns:72px 1fr;gap:14px}
+.before-after{padding:75px 0}
+.comparison-grid,.change-chips{grid-template-columns:1fr}
+.download-links{flex-direction:column;gap:10px}
 }
