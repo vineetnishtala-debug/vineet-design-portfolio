@@ -58,6 +58,7 @@ to{scale:1;opacity:1}
 .final-project-card{grid-column:span 8}
 .final-project-card img{aspect-ratio:16/9}
 .card-link{display:inline-block;margin-top:6px;color:#54209b;font-weight:900;font-size:.9rem}
+.revision-preview{display:flex;align-items:center;gap:10px;margin:18px 0 14px;padding-top:14px;border-top:1px solid #e1dcd3;color:#6b7080;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}.revision-preview b{color:#7b36d1}.final-project-card .final-badge{background:var(--pink);color:#fff}
 .environment-page{--env-blue:#c7ecf0}
 .environment-hero{padding-bottom:54px}
 .hero-summary{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:80px;align-items:start}
@@ -104,9 +105,11 @@ to{scale:1;opacity:1}
 .process-download{margin-top:0}
 .process-download span{color:#aeb8d1}
 .environment-page .footer{background:var(--ink)}
+.revision-jump{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;margin-top:34px;padding:17px 20px;border:1px solid var(--line);border-radius:16px;text-decoration:none;background:#ffffff08}.revision-jump span{text-transform:uppercase;letter-spacing:.13em;font-size:.68rem;color:var(--lime);font-weight:900}.revision-jump b{font-size:1rem}.revision-jump i{font-style:normal;color:#aeb8d1;font-size:.85rem}.revision-jump:hover{border-color:var(--lime)}
 .before-after{padding:115px 0;border-bottom:1px solid #d4cec4}
 .before-after h2{font-size:clamp(2.4rem,5vw,4.8rem);max-width:900px}
 .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.revision-callout{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:start;margin-bottom:30px;padding:24px 28px;background:#171e34;color:#fff;border-radius:18px}.revision-callout strong{color:var(--lime);text-transform:uppercase;letter-spacing:.13em;font-size:.76rem}.revision-callout p{margin:0;color:#cfd5e7;font-size:1rem;line-height:1.6}
 .comparison-grid figure{position:relative;margin:0}
 .comparison-grid img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:20px}
 .comparison-grid figcaption{font-size:.9rem;line-height:1.55;color:#5e6574;padding:12px 2px 0}
@@ -147,4 +150,5 @@ to{scale:1;opacity:1}
 .before-after{padding:75px 0}
 .comparison-grid,.change-chips{grid-template-columns:1fr}
 .download-links{flex-direction:column;gap:10px}
+.revision-jump{grid-template-columns:1fr;gap:7px}.revision-callout{grid-template-columns:1fr;gap:10px}
 }
